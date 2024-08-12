@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input:focus {
+  outline: 1px groove lightgray;
+  border: 1px solid orangered;
+  border-radius: 2px;
+}
+
+body {
+  background: linear-gradient(to right, rgb(22, 189, 201), rgb(233, 213, 32));
+}
+
+input {
+  flex: 1;
+  height: 40px;
+  padding-left: 5px;
+  border-style: none;
+  border-bottom: 2px solid rgb(15, 21, 100);
+  background: transparent;
+}
+
+.search-container {
+  width: 200px;
+  background: linear-gradient(to right, rgb(253, 187, 19), orange);
+  margin: 45vh auto 0;
+}
+.search-feild {
+  display: flex;
+  align-items: center;
+}
+.suggestions ul {
+  flex: 1;
+}
+.suggestions ul li {
+  list-style: none;
+  padding: 5px 5px;
+  cursor: pointer;
+}
+.suggestions ul li:hover {
+  background: rgb(81, 255, 0);
+}
+
+.suggestions {
+  max-height: 252px;
+  overflow-y: hidden;
+}
